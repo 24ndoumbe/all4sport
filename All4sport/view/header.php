@@ -15,34 +15,39 @@ if (!isset ($_SESSION['codeclient'])) {
 }
 
 ?>
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <a href="../controller/connexioncontroller.php">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    <link rel="stylesheet" href="../view/styleboutique.css">
-<title>BOUTIQUE</title>
+    
+    <title>SITE MARCHAND</title>
 </head>
+
 <body>
-<nav>
-        <a href="../view/acceuil.php" class="logo"><span>A</span>ll4<img src="../view/logo sport.jfif" alt=""><span>S</span>port </a>
+
+    <nav>
+
+        <a href="#" class="logo"><span>A</span>ll4<img src="logo sport.jfif" alt=""><span>S</span>port </a>
         <h1></h1>
         <div class="onglets">
-            <ul>
-           <li> <a id='onglet'href="../view/acceuil.php">Acceuil</a></li>
-          <li> <a id='onglet'href="../controller/bddproduits.php">Produits</a></li>
-    
-           <li> <a id='onglet'href="#">Contact</a></li>
-           <li> <a id='onglet' class="rayon" href="#">Rayons</a></li>
-           </ul>
-</div>
+            <a href="../view/acceuil.php">Acceuil</a>
+            <a href="../view/acceuil.php">Presentation</a>
+            <a href="../controller/bddproduits.php">Produits</a>
+            <a href="#">Rayons</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+
+        <br>
+
+        <header>
+            <section class="acceuil" id="acceuil">
+                <div class="contenu"></div>
+            </section>
+        </header>
    
 <?php
 
@@ -191,4 +196,69 @@ margin-bottom :30px;
 
 }
 
-    </style>
+</style>
+
+<style>
+    body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+
+}
+
+.logo {
+    color: rgb(130, 11, 241);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span {
+    color: orange;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    color: pink;
+    padding: 100px;
+    width: 85%;
+    background-image: url(imagecouverture.jfif);
+    position: relative;
+    min-height: 50vh;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+nav .onglets {
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+
+
+
+footer {
+    margin-top: 300px;
+    border-top: 5px solid white;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 60px 600px;
+
+}
+
+</style>
